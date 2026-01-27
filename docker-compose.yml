@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  # Servicio de MongoDB
+  mongodb:
+    image: mongo:7.0
+    container_name: franchise-mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: franchisedb
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - franchise-network
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/test --quiet
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Servicio de la API
+  franchise-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: franchise-api
+    restart: unless-stopped
+    ports:
+      - "8081:8081"
+    environment:
+      MONGO_HOST: mongodb
+      MONGO_PORT: 27017
+      MONGO_DB: franchisedb
+      SERVER_PORT: 8081
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    networks:
+      - franchise-network
+
+# Redes
+networks:
+  franchise-network:
+    driver: bridge
+
+# Volúmenes (para persistir datos de MongoDB)
+volumes:
+  mongodb_data:
+    driver: local

@@ -1,4 +1,4 @@
-package model;
+package com.company.franchise.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

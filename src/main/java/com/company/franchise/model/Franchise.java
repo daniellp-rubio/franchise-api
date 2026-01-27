@@ -1,4 +1,4 @@
-package model;
+package com.company.franchise.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -20,7 +20,7 @@ import java.util.List;
 @Document(collection = "franchises")
 public class Franchise {
     @Id
-    private String Id;
+    private String id;
     private String name;
     @Builder.Default
     private List<Branch> branches = new ArrayList<>();
