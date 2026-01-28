@@ -478,21 +478,6 @@ aws ecs update-service --cluster franchise-api-cluster \
   ]
 }
 ```
-
----
-
-## 🤝 Contribuir
-
-¡Las contribuciones son bienvenidas! Por favor lee [CONTRIBUTING.md](CONTRIBUTING.md) para detalles sobre nuestro código de conducta y el proceso para enviar pull requests.
-
-### Proceso de Contribución
-
-1. Fork el proyecto
-2. Crea tu rama de feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
-
 ---
 
 ## 📝 Licencia
@@ -504,53 +489,7 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 ## 👤 Autor
 
 **Tu Nombre**
-- GitHub: [@tu-usuario](https://github.com/tu-usuario)
-- LinkedIn: [Tu Perfil](https://linkedin.com/in/tu-perfil)
+- GitHub: [@Daintz](https://github.com/Daintz)
+- LinkedIn: [Daintz](https://www.linkedin.com/in/daniel-lopez-rubio/)
 
 ---
-
-## 🙏 Agradecimientos
-
-- Spring Team por el excelente framework
-- MongoDB por la base de datos reactiva
-- Anthropic por Claude AI
-- Comunidad open source
-
----
-
-## 📞 Soporte
-
-Si tienes preguntas o problemas:
-
-- 📧 Email: tu-email@example.com
-- 🐛 Issues: [GitHub Issues](https://github.com/tu-usuario/franchise-api/issues)
-- 💬 Discussions: [GitHub Discussions](https://github.com/tu-usuario/franchise-api/discussions)
-
----
-
-## 🗺 Roadmap
-
-### v1.0.0 (Actual)
-- ✅ CRUD de franquicias, sucursales y productos
-- ✅ Consultas de reportes
-- ✅ Documentación Swagger
-- ✅ Docker y Docker Compose
-- ✅ Despliegue en AWS
-
-### v1.1.0 (Próximo)
-- [ ] Autenticación y autorización
-- [ ] Paginación en endpoints GET
-- [ ] Filtros y búsqueda avanzada
-- [ ] Caching con Redis
-- [ ] Eventos asíncronos
-
-### v2.0.0 (Futuro)
-- [ ] GraphQL API
-- [ ] WebSocket para actualizaciones en tiempo real
-- [ ] Machine Learning para predicción de stock
-- [ ] Dashboard administrativo
-- [ ] Integración con ERP
-
----
-
-⭐ Si te gusta este proyecto, ¡dale una estrella en GitHub!

@@ -1004,16 +1004,6 @@ http://localhost:8081/api/v2/franchises
 
 ---
 
-## 📞 Soporte
-
-¿Preguntas sobre la API?
-
-- 📧 Email: api-support@franchise.com
-- 🐛 Issues: [GitHub Issues](https://github.com/tu-usuario/franchise-api/issues)
-- 💬 Discord: [Community Server](https://discord.gg/franchise-api)
-
----
-
 **Documentación generada automáticamente con SpringDoc OpenAPI**
 
 Última actualización: 2026-01-27
