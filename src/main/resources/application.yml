@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: franchise-api
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/franchisedb
+      auto-index-creation: true
+
+server:
+  port: 8081
+
+logging:
+  level:
+    com.company.franchise: DEBUG
+    org.springframework.data.mongodb: DEBUG
